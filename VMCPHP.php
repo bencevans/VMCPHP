@@ -25,7 +25,7 @@ class VMCPHP {
   //Using a Proxy
   //  $proxy = 'location:port';
   //  e.g $proxy = 'localhost:8888';
-  public $proxy = 'localhost:8888';
+  public $proxy = null;
 
   public function version() {
     return $this->VERSION;
