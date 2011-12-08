@@ -1,7 +1,7 @@
 VMCPHP<small> - VMC Library in PHP</small>
 -
 
-VMCPHP is built to ry and replicate the VMC Library as closely as possible.
+VMCPHP is built to replicate the VMC Library as closely as possible.
 
 Example <small>- Printing HTML List of Apps
 -
