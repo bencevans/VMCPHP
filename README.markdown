@@ -7,19 +7,22 @@ VMCPHP is built to replicate the VMC Library as closely as possible.
 
 Here is an example implementation of VMCPHP that connects to a [VCAP](https://github.com/CloudFoundry/vcap) [(CloudFoundry)](http://cloudfoundry.com) Server with credentials and lists all the apps running for that user.
 
-	<?php
-	require_once('VMCPHP.php');
-	
-	$VMC = new VMCPHP;
-	$VMC->target = 'http://api.mycloudfoundryaddress.co.uk';
-	$VMC->login('my@email.co.uk', 'mypassword');
-	?>
-	
-	<ul>
-		<?php foreach($VMC->apps() as $app) {
-			echo '<li>' . $app['name'] . '</li>';
-		} ?>
-	</ul>
+```php
+<?php
+require_once('VMCPHP.php');
+
+$VMC = new VMCPHP;
+$VMC->target = 'http://api.mycloudfoundryaddress.co.uk';
+$VMC->login('my@email.co.uk', 'mypassword');
+?>
+
+<ul>
+	<?php foreach($VMC->apps() as $app) {
+		echo '<li>' . $app['name'] . '</li>';
+	} ?>
+</ul>
+```
+
 When using the correct credentials and address for your [VCAP](https://github.com/CloudFoundry/vcap) [(CloudFoundry)](http://cloudfoundry.com) Server will give you something like…
 	<ul>
 		<li>dashboard</li>
